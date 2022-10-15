@@ -1,0 +1,190 @@
+#prdct {
+    padding: 100px 0;
+    background-color: #f9f3f0;
+
+    .image {
+        img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    }
+
+
+    .prdctright {
+        .aa{
+
+            position: sticky;
+            top: 20px;
+        }
+        .product-title {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .price-amount {
+            font-size: 28px;
+            font-weight: 600;
+
+        }
+
+        .stars {
+            i {
+                color: #ffdc60;
+
+            }
+
+            span {
+                color: #777777;
+            }
+        }
+
+        .vote {
+            span {
+                margin-left: 10px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #3577f0;
+            }
+
+            i {
+                color: #3577f0;
+            }
+        }
+
+        .kamil {
+            margin-bottom: 30px;
+            margin-top: 20px;
+            color: #777777;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+
+        .color {
+            display: flex;
+            align-items: center;
+
+            h6 {
+                font-weight: 500;
+                font-size: 20px;
+                margin-bottom: 0;
+                min-width: 114px;
+            }
+
+            i {
+                margin: 0 5px;
+            }
+        }
+
+        .size {
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+
+            h6 {
+                font-weight: 500;
+                font-size: 20px;
+                margin-bottom: 0;
+                min-width: 110px;
+            }
+
+            span {
+                border: 2px solid #f6f7fb;
+                background: #fff;
+                padding: 5px 13px;
+                border-radius: 30px;
+                min-width: 44px;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-transform: uppercase;
+                font-weight: 500;
+                line-height: 24px;
+                margin: 5px;
+                cursor: pointer;
+                transition: .3s;
+                &:hover{
+                    border-color: #777777;
+
+                }
+            }
+        }
+        .addcard{
+            .product-count {
+               
+                height: 30px;
+              }
+              
+              .product-count a {
+                text-decoration: none;
+                font-weight: 700;
+                color: black;
+              }
+              
+              .button-count {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                background-color: #2196F3;
+                color: white;
+                font-size: 18px;
+               
+                text-align: center;
+                border: none;
+                outline: none;
+                border-radius: 100%;
+              }
+              .button-count:active {
+                background-color: #1565C0;
+              }
+              
+              .number-product {
+                display: inline-block;
+                width: 46px;
+                height: 28px;
+                font-size: 24px;
+                border: none;
+                text-align: center;
+                outline: none;
+                background-color: transparent;
+              }
+              
+            
+
+
+
+
+
+        }
+
+        .description{
+            margin-top: 90px;
+            h4{
+                color: #2196F3;
+            }
+            .spec{
+                margin-top: 40px;
+               
+            }
+            .care{
+                margin-top: 40px;
+            }
+            p{
+                margin-top: 30px;
+                opacity: 0.5;
+                font-weight: 600;
+            }
+            .iconimgs{
+                margin-top: 50px;
+                .sertf{
+                    margin-right: 40px;
+                    h5{
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

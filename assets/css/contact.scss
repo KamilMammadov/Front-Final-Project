@@ -1,0 +1,355 @@
+.maincontent {
+    margin-top: 20px;
+    padding: 70px 0;
+    background-color: #f8f8f8;
+
+    .left {
+
+        .simplea {
+            opacity: 0.5;
+            color: black;
+            font-weight: bolder;
+            padding-right: 10px;
+            border-right: 2px solid grey;
+        }
+
+        .maina {
+            opacity: 1;
+            padding-left: 5px;
+            color: #3577f0;
+        }
+
+    }
+
+    .right {
+        .image {
+            position: relative;
+            z-index: 1;
+
+            img {
+                z-index: 2;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                background-color: white;
+                width: 24%;
+                height: 125px;
+                border-radius: 100%;
+                top: -23px;
+                right: 67px;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+
+
+
+.message {
+    margin-top: 100px;
+
+    .toptext {
+        p {
+            opacity: 0.5;
+            font-weight: 600;
+            padding-right: 153px;
+        }
+    }
+
+    .left {
+        .topinp {
+            position: relative;
+            margin-top: 40px;
+
+            input {
+                margin-right: 15px;
+                padding: 20px;
+                outline: none;
+                border-radius: 5px;
+                border: 1px solid #c3c3c3;
+            }
+
+            .name {
+                position: absolute;
+                background-color: rgb(255, 255, 255);
+                top: -10px;
+                left: 35px;
+                padding: 0px 10px;
+                z-index: 111;
+
+            }
+
+            .maintext {
+                opacity: 0.5;
+            }
+
+            .phone {
+                position: absolute;
+                background-color: rgb(255, 255, 255);
+                top: -10px;
+                left: 274px;
+                padding: 0px 10px;
+                z-index: 111;
+            }
+
+            .emailtext {
+                position: absolute;
+                background-color: rgb(255, 255, 255);
+                top: -10px;
+                left: 509px;
+                padding: 0px 10px;
+                z-index: 111;
+            }
+        }
+
+
+
+        .bottominp {
+            margin-top: 50px;
+            position: relative;
+
+            textarea {
+                width: 98%;
+                height: 175px;
+                outline: none;
+                border-radius: 5px;
+                border: 1px solid #c3c3c3;
+            }
+
+            .areaspan {
+                span {
+                    opacity: 0.5;
+                }
+
+                position: absolute;
+                background-color: rgb(255, 255, 255);
+                top: -14px;
+                left: 23px;
+                padding: 0px 10px;
+                z-index: 111;
+
+            }
+        }
+
+
+        .btnn {
+            margin-top: 20px;
+
+            .lbtn {
+                background-color: #3577f0;
+                color: white;
+                border: none;
+                padding: 15px 30px;
+                margin-left: none !important;
+                border-radius: 5px;
+                font-size: 19px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .right {
+        .rgtext {
+            margin-top: 52px;
+
+            p {
+                opacity: 0.5;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.map {
+    margin: 80px 0;
+
+    iframe {
+        width: 100%;
+    }
+}
+
+@media (max-width:578px) {
+    .topinp {
+        input {
+            width: 100%;
+        }
+
+        .name {
+            top: -10px !important;
+            left: 13px !important;
+        }
+
+        .phone {
+            top: -10px !important;
+            left: 160px !important;
+        }
+
+        .emailtext {
+            top: -10px !important;
+            left: 320px !important;
+        }
+    }
+}
+
+
+.head {
+    padding: 35px 0;
+    position: fixed;
+    width: 100%;
+
+    p {
+        margin-top: 12px;
+        margin-right: 20px;
+    }
+
+    .sign {
+        background-color: #ff497c;
+        color: white;
+        padding: 10px 20px;
+        font-size: 21px;
+        border-radius: 5px;
+        transition: .5s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+.signleft {
+    background-image: url(https://new.axilthemes.com/demo/template/etrade/assets/images/bg/bg-image-9.jpg);
+    height: 100vh;
+    padding: 150px 50px 0 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.signright {
+    position: relative;
+
+    .signtext {
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+
+        .signtop {
+            p {
+                opacity: 0.5;
+                margin-top: 20px;
+            }
+        }
+
+        .signinp {
+            position: relative;
+
+            input {
+
+                width: 100%;
+                padding: 20px 30px;
+                outline: none;
+                border-radius: 5px;
+                border: 1px solid rgb(204, 204, 204);
+                margin-top: 20px;
+                opacity: 0.5;
+
+            }
+
+            .signemail {
+                position: absolute;
+                top: 3px;
+                left: 24px;
+                color: black;
+                background-color: rgb(255, 255, 255);
+                padding: 3px 15px;
+                z-index: 1111;
+
+                span {
+                    opacity: 0.5;
+                    font-weight: 600;
+                }
+            }
+
+            .password {
+                position: absolute;
+                top: 90px;
+                left: 24px;
+                color: black;
+                background-color: rgb(255, 255, 255);
+                padding: 3px 15px;
+                z-index: 1111;
+
+                span {
+                    opacity: 0.5;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .signbtn {
+            margin-top: 50px;
+
+            button {
+                background-color: #3577f0;
+                padding: 15px 30px;
+                font-size: 18px;
+                border: none;
+                border-radius: 8px;
+                color: white;
+                transition: 0.5s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            a {
+                margin-top: 14px;
+                transition: 0.5s;
+                font-size: 14px;
+
+                &:hover {
+                    opacity: 0.5;
+                    color: black;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media (max-width:578px) {
+    .head {
+        .right {
+            a {
+                font-size: 14px;
+                padding: 0px 2px !important;
+          
+                display: flex;
+    align-items: center;
+            }
+            p{
+                margin-top: 6px !important;
+                width: 50% !important;
+            }
+        }
+    }
+
+    .signleft {
+        display: none;
+    }
+
+    .signright {
+        .signinp {
+            margin-top: 500px;
+        }
+    }
+}

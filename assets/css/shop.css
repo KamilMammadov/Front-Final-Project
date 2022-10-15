@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.maincontent {
+  margin-top: 20px;
+  padding: 70px 0;
+  background-color: #f8f8f8;
+}
+
+.maincontent .left .simplea {
+  opacity: 0.5;
+  color: black;
+  font-weight: bolder;
+  padding-right: 10px;
+  border-right: 2px solid grey;
+}
+
+.maincontent .left .maina {
+  opacity: 1;
+  padding-left: 5px;
+  color: #3577f0;
+}
+
+.maincontent .right .image {
+  position: relative;
+  z-index: 1;
+}
+
+.maincontent .right .image img {
+  z-index: 2;
+}
+
+.maincontent .right .image::after {
+  content: '';
+  position: absolute;
+  background-color: white;
+  width: 24%;
+  height: 125px;
+  border-radius: 100%;
+  top: -23px;
+  right: 67px;
+  z-index: -1;
+}
+
+.shopsec {
+  margin: 20px 0;
+}
+
+.shopsec .sorttext {
+  margin-top: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid grey;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+.shopsec .sorttext h6 {
+  font-size: 20px;
+}
+
+.shopsec .sorttext .minus {
+  display: none;
+}
+
+.shopsec .sorttext .sortactive {
+  display: block;
+}
+
+.shopsec .sort-menu {
+  margin-top: 10px;
+}
+
+.shopsec .sort-menu i {
+  margin-right: 10px;
+  opacity: .5;
+  margin-top: 10px;
+}
+
+.shopsec .size ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.shopsec .size li {
+  width: 17%;
+  border: 1px solid grey;
+  padding: 8px 11px;
+  border-radius: 100%;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.shopsec .yellow {
+  color: yellow;
+}
+
+.shopsec .red {
+  color: red;
+}
+
+.shopsec .purple {
+  color: purple;
+}
+
+.shopsec .orange {
+  color: orange;
+}
+
+.shopsec .green {
+  color: green;
+}
+
+.shopsec .grey {
+  color: grey;
+}
+
+.shopsec .black {
+  color: black;
+}
+
+.shopsec .lightblue {
+  color: lightblue;
+}
+
+.shopsec .lightgreen {
+  color: lightcoral;
+}
+
+.flashsale .flashbtn {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flashsale .flashbtn a {
+  opacity: .5;
+  font-weight: bolder;
+  color: black;
+  background-color: #d6d7db;
+  padding: 20px 60px;
+}
+
+.flcard {
+  margin-top: 20px;
+}
+
+.flcard .img img {
+  width: 100%;
+}
+
+.flcard .action {
+  left: 28px !important;
+}
+
+.topflash .text {
+  margin-top: 10px;
+}
+
+.topflash .text span {
+  font-size: 15px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.topflash .scoption .single-select {
+  padding: 10px 30px;
+  border: 2px solid #c5c4c4;
+  border-radius: 5px;
+}
+
+.email {
+  background-image: url(https://new.axilthemes.com/demo/template/etrade/assets/images/bg/bg-image-5.jpg);
+}
+
+.container {
+  margin-top: 15px;
+}
+
+.slider-labels {
+  margin-top: 10px;
+}
+
+/* Functional styling;
+   * These styles are required for noUiSlider to function.
+   * You don't need to change these rules to apply your design.
+   */
+.noUi-target, .noUi-target * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.noUi-target {
+  position: relative;
+  direction: ltr;
+}
+
+.noUi-base {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  /* Fix 401 */
+}
+
+.noUi-origin {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.noUi-handle {
+  position: relative;
+  z-index: 1;
+}
+
+.noUi-stacking .noUi-handle {
+  /* This class is applied to the lower origin when
+     its values is > 50%. */
+  z-index: 10;
+}
+
+.noUi-state-tap .noUi-origin {
+  -webkit-transition: left 0.3s,top .3s;
+  transition: left 0.3s,top .3s;
+}
+
+.noUi-state-drag * {
+  cursor: inherit !important;
+}
+
+/* Painting and performance;
+   * Browsers can paint handles in their own layer.
+   */
+.noUi-base, .noUi-handle {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* Slider size and handle placement;
+   */
+.noUi-horizontal {
+  height: 4px;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  left: -7px;
+  top: -7px;
+  background-color: #345DBB;
+}
+
+/* Styling;
+   */
+.noUi-background {
+  background: #D6D7D9;
+}
+
+.noUi-connect {
+  background: #345DBB;
+  -webkit-transition: #B8B8B8 450ms;
+  transition: #B8B8B8 450ms;
+}
+
+.noUi-origin {
+  border-radius: 2px;
+}
+
+.noUi-target {
+  border-radius: 2px;
+}
+
+/* Handles and cursors;
+   */
+.noUi-draggable {
+  cursor: w-resize;
+}
+
+.noUi-vertical .noUi-draggable {
+  cursor: n-resize;
+}
+
+.noUi-handle {
+  cursor: default;
+  -webkit-box-sizing: content-box !important;
+  box-sizing: content-box !important;
+}
+
+.noUi-handle:active {
+  border: 8px solid #345DBB;
+  border: 8px solid rgba(53, 93, 187, 0.38);
+  background-clip: padding-box;
+  left: -14px;
+  top: -14px;
+}
+
+/* Disabled state;
+   */
+[disabled].noUi-connect, [disabled] .noUi-connect {
+  background: #B8B8B8;
+}
+
+[disabled].noUi-origin, [disabled] .noUi-handle {
+  cursor: not-allowed;
+}
+/*# sourceMappingURL=shop.css.map */

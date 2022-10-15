@@ -1,0 +1,322 @@
+.maincontent {
+  margin-top: 20px;
+  padding: 70px 0;
+  background-color: #f8f8f8;
+}
+
+.maincontent .left .simplea {
+  opacity: 0.5;
+  color: black;
+  font-weight: bolder;
+  padding-right: 10px;
+  border-right: 2px solid grey;
+}
+
+.maincontent .left .maina {
+  opacity: 1;
+  padding-left: 5px;
+  color: #3577f0;
+}
+
+.maincontent .right .image {
+  position: relative;
+  z-index: 1;
+}
+
+.maincontent .right .image img {
+  z-index: 2;
+}
+
+.maincontent .right .image::after {
+  content: '';
+  position: absolute;
+  background-color: white;
+  width: 24%;
+  height: 125px;
+  border-radius: 100%;
+  top: -23px;
+  right: 67px;
+  z-index: -1;
+}
+
+.message {
+  margin-top: 100px;
+}
+
+.message .toptext p {
+  opacity: 0.5;
+  font-weight: 600;
+  padding-right: 153px;
+}
+
+.message .left .topinp {
+  position: relative;
+  margin-top: 40px;
+}
+
+.message .left .topinp input {
+  margin-right: 15px;
+  padding: 20px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #c3c3c3;
+}
+
+.message .left .topinp .name {
+  position: absolute;
+  background-color: white;
+  top: -10px;
+  left: 35px;
+  padding: 0px 10px;
+  z-index: 111;
+}
+
+.message .left .topinp .maintext {
+  opacity: 0.5;
+}
+
+.message .left .topinp .phone {
+  position: absolute;
+  background-color: white;
+  top: -10px;
+  left: 274px;
+  padding: 0px 10px;
+  z-index: 111;
+}
+
+.message .left .topinp .emailtext {
+  position: absolute;
+  background-color: white;
+  top: -10px;
+  left: 509px;
+  padding: 0px 10px;
+  z-index: 111;
+}
+
+.message .left .bottominp {
+  margin-top: 50px;
+  position: relative;
+}
+
+.message .left .bottominp textarea {
+  width: 98%;
+  height: 175px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #c3c3c3;
+}
+
+.message .left .bottominp .areaspan {
+  position: absolute;
+  background-color: white;
+  top: -14px;
+  left: 23px;
+  padding: 0px 10px;
+  z-index: 111;
+}
+
+.message .left .bottominp .areaspan span {
+  opacity: 0.5;
+}
+
+.message .left .btnn {
+  margin-top: 20px;
+}
+
+.message .left .btnn .lbtn {
+  background-color: #3577f0;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  margin-left: none !important;
+  border-radius: 5px;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.message .right .rgtext {
+  margin-top: 52px;
+}
+
+.message .right .rgtext p {
+  opacity: 0.5;
+  font-weight: 600;
+}
+
+.map {
+  margin: 80px 0;
+}
+
+.map iframe {
+  width: 100%;
+}
+
+@media (max-width: 578px) {
+  .topinp input {
+    width: 100%;
+  }
+  .topinp .name {
+    top: -10px !important;
+    left: 13px !important;
+  }
+  .topinp .phone {
+    top: -10px !important;
+    left: 160px !important;
+  }
+  .topinp .emailtext {
+    top: -10px !important;
+    left: 320px !important;
+  }
+}
+
+.head {
+  padding: 35px 0;
+  position: fixed;
+  width: 100%;
+}
+
+.head p {
+  margin-top: 12px;
+  margin-right: 20px;
+}
+
+.head .sign {
+  background-color: #ff497c;
+  color: white;
+  padding: 10px 20px;
+  font-size: 21px;
+  border-radius: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.head .sign:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.signleft {
+  background-image: url(https://new.axilthemes.com/demo/template/etrade/assets/images/bg/bg-image-9.jpg);
+  height: 100vh;
+  padding: 150px 50px 0 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.signright {
+  position: relative;
+}
+
+.signright .signtext {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.signright .signtext .signtop p {
+  opacity: 0.5;
+  margin-top: 20px;
+}
+
+.signright .signtext .signinp {
+  position: relative;
+}
+
+.signright .signtext .signinp input {
+  width: 100%;
+  padding: 20px 30px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  margin-top: 20px;
+  opacity: 0.5;
+}
+
+.signright .signtext .signinp .signemail {
+  position: absolute;
+  top: 3px;
+  left: 24px;
+  color: black;
+  background-color: white;
+  padding: 3px 15px;
+  z-index: 1111;
+}
+
+.signright .signtext .signinp .signemail span {
+  opacity: 0.5;
+  font-weight: 600;
+}
+
+.signright .signtext .signinp .password {
+  position: absolute;
+  top: 90px;
+  left: 24px;
+  color: black;
+  background-color: white;
+  padding: 3px 15px;
+  z-index: 1111;
+}
+
+.signright .signtext .signinp .password span {
+  opacity: 0.5;
+  font-weight: 600;
+}
+
+.signright .signtext .signbtn {
+  margin-top: 50px;
+}
+
+.signright .signtext .signbtn button {
+  background-color: #3577f0;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.signright .signtext .signbtn button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.signright .signtext .signbtn a {
+  margin-top: 14px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 14px;
+}
+
+.signright .signtext .signbtn a:hover {
+  opacity: 0.5;
+  color: black;
+}
+
+@media (max-width: 578px) {
+  .head .right a {
+    font-size: 14px;
+    padding: 0px 2px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .head .right p {
+    margin-top: 6px !important;
+    width: 50% !important;
+  }
+  .signleft {
+    display: none;
+  }
+  .signright .signinp {
+    margin-top: 500px;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
